@@ -1,0 +1,10 @@
+.sidebarContainer svg {
+  font-size: 2rem;
+  transition: 0.2s ease all;
+  margin-top: 1rem;
+}
+.sidebarContainer svg:hover {
+  transform: scale(1.2);
+  margin: 1rem 1rem 1rem 0px;
+  font-size: 3rem;
+}/*# sourceMappingURL=Sidebar.module.css.map */

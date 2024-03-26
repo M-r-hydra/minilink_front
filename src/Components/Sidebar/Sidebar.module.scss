@@ -1,0 +1,16 @@
+.sidebarContainer {
+  svg {
+    font : {
+      size: 2rem;
+    }
+    transition: 0.2s ease all;
+    &:hover {
+      transform: scale(1.2);
+      margin: 1rem 1rem 1rem 0px;
+      font : {
+        size: 3rem;
+      }
+    }
+    margin-top: 1rem;
+  }
+}

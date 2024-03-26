@@ -1,8 +1,16 @@
+// Next
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+// Next
 
-const inter = Inter({ subsets: ["latin"] });
+// CSS
+import styles from "./layoutStyles.module.css";
+import "./globals.css";
+import "react-tooltip/dist/react-tooltip.css";
+// CSS
+
+// Components
+import Sidebar from "@/Components/Sidebar/Sidebar";
+// Components
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +23,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className="w-full flex flex-row-reverse items-center h-full"
+    >
+      <body className="flex flex-row-reverse items-center justify-between w-full h-full overflow-hidden">
+        <Sidebar />
+        <section className={`${styles.masterContianer} w-[calc(100%_-_48px)]`}>
+          {children}
+        </section>
+      </body>
     </html>
   );
 }
